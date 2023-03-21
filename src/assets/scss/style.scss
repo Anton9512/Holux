@@ -50,12 +50,85 @@ button {
   }
 
   &__subtitle {
-   display: block;
-   font-size: var(--small-font-size);
-   color: var(--second-color);
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--second-color);
   }
 }
 
 .main {
-   overflow: hidden;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    //   color: #fff;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    font-weight: 500;
+    transition: 0.3s;
+
+    & i {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    &__menu {
+      position: fixed;
+      bottom: 2rem;
+      background-color: var(--container-color);
+      box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.15);
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 1.3rem 3rem;
+      border-radius: 1.25rem;
+      transition: 0.4s;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__link {
+      color: var(--text-color);
+      display: flex;
+      padding: 0.5rem;
+      border-radius: 50%;
+
+      & i {
+        font-size: 1rem;
+      }
+
+      & span {
+        display: none;
+      }
+    }
+  }
 }
