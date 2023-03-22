@@ -60,6 +60,15 @@ button {
   overflow: hidden;
 }
 
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
+
+  & .nav__logo {
+    color: var(--first-color);
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -258,4 +267,31 @@ button {
 
 .nav__button {
   display: none;
+}
+
+/*============= LOGOS ===============*/
+
+.logos {
+  &__container {
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    justify-items: center;
+  }
+
+  &__img {
+    & img {
+      height: 60px;
+      opacity: 0.2;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+body {
+  height: 200vh;
 }
