@@ -113,7 +113,7 @@ h6 {
     --header-height: 3.5rem;
     --first-color: hsl(228, 66%, 53%);
     --first-color-alt: hsl(228, 66%, 47%);
-    --first-color-light: hwb(190 62% 59%);
+    --first-color-light: hsl(228 62% 59%);
     --first-color-lighten: hsl(228, 100%, 97%);
     --second-color: hsl(25, 83%, 53%);
     --title-color: hsl(228, 57%, 28%);
@@ -1448,6 +1448,40 @@ button {
 .contact__card-button:hover {
     background-color: var(--first-color);
     color: #fff;
+}
+
+/*=================== SUBSCRIBE ==================*/
+.subscribe {
+    padding: 2.5rem 0;
+}
+
+.subscribe__container {
+    background-color: var(--first-color);
+    padding: 3rem 2rem;
+    border-radius: 1.25rem;
+    border: 6px solid var(--first-color-lighten);
+    text-align: center;
+}
+
+.subscribe__title {
+    font-size: var(--h2-font-size);
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.subscribe__description {
+    color: hsl(228, 90%, 92%);
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+
+.subscribe__button {
+    border: 2px solid #fff;
+    background: var(--first-color-light);
+}
+
+.subscribe__button:hover {
+    background-color: var(--first-color);
 }
 
 body {
