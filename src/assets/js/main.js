@@ -1,6 +1,8 @@
 //= components/swiper-bundle.min.js
 //= components/scrollHeader.js
 //= components/valueAccordion.js
+//= components/scrollSectionActiveLink.js
+//= components/showScrollUp.js
 
 var swiperPopular = new Swiper(".popular__container", {
   spaceBetween: 32,
