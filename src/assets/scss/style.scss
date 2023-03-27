@@ -980,6 +980,10 @@ body.dark-theme {
     align-items: center;
   }
 
+  .popular .swiper-wrapper {
+    width: 500px;
+  }
+
   .contact {
     &__images {
       order: 1;
@@ -1000,10 +1004,6 @@ body.dark-theme {
       grid-template-columns: repeat(2, max-content);
       justify-content: space-between;
     }
-  }
-
-  .popular .swiper-wrapper {
-    width: 500px;
   }
 }
 
@@ -1270,7 +1270,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 2048px) {
+@media screen and (min-width: 3840px) {
   body {
     zoom: 2;
   }
